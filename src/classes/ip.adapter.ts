@@ -7,7 +7,7 @@ class IPinterface {
         let ipAddress = (ip.split("/")[0]).split(".");
         for(let octet = 0; octet < 4; octet++) {
             if(octet == 0) {
-                if(Number(ipAddress[octet]) > 254 || Number(ipAddress[octet]) < 1) {
+                if(Number(ipAddress[octet]) > 255 || Number(ipAddress[octet]) < 1) {
                     throw new Error("First octet of ip address must be between 1 and 254");
                 }
             }
