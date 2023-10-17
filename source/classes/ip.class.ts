@@ -25,7 +25,7 @@ class IP {
     }
 
     public get Network(): string {
-        return `Network address: ${this.NetworkAddress.join(".")}/${this._mask.Submask.toString()}`;
+        return `${this.NetworkAddress.join(".")}/${this._mask.Submask.toString()}`;
     }
 
     public get Broadcast(): string {
@@ -37,13 +37,13 @@ class IP {
             BroadcastOctest.push(NetworkAddress[i] | (255 ^ Mask[i]));
         }
 
-        return `Broadcast address: ${BroadcastOctest.join(".")}`;
+        return `${BroadcastOctest.join(".")}`;
     }
 
     public get FistClient(): string {
         let NetworkAddress = this.NetworkAddress;
         NetworkAddress[3]++;
-        return `First client address: ${NetworkAddress.join(".")}`;
+        return `${NetworkAddress.join(".")}`;
     }
 
     public get ClientCount(): string {
@@ -52,8 +52,8 @@ class IP {
         for (let i = 0; i < mask; i++) {
             total += Math.pow(2, i);
         }
-        return `Total client count: ${total}`;
+        return `${total}`;
     }
 }
 
-export default IP;
+export {IP};

@@ -4,9 +4,6 @@ class Mask {
     private _fullmask: Array<number>;
     private _inverted: number;
     constructor(mask: number) {
-        if (mask < 8 || mask > 30) {
-            throw new Error("Mask must be between 8 and 30");
-        }
         this._sub = mask
         let octets = 0
         let maskOctets = []
