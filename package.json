@@ -1,6 +1,6 @@
 {
   "name": "ip_calc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.2.0",
     "@prisma/client": "^5.4.2",
+    "@vercel/analytics": "^1.1.1",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",
