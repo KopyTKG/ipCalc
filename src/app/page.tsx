@@ -32,7 +32,7 @@ export default function Home() {
      fistClient: ip.FistClient(),
      clientCount: ip.ClientCount(),
     })
-   } catch (e) {
+   } catch (e: any) {
     console.log(e.message)
     return
    }

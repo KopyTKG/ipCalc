@@ -18,8 +18,5 @@ Unsupported version have nolonger functional parts or security issues.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 3.5.1 | :white_check_mark:   |
-| < 3.5.0 | :x:                |
-
-:exclamation: From version `3.5.0`.There has been major change in Database table. Previous versions are nolonger supported :exclamation:
-
+| 1.1.0 | :white_check_mark:   |
+| < 1.0.0 | :x:                |
