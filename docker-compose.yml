@@ -1,0 +1,9 @@
+
+version: '3.7'
+
+services:
+  IpCalc:
+    container_name: IpCalc
+    image: 'ipcalc:latest'
+    ports:
+      - '9999:3000'
